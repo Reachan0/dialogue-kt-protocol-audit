@@ -1,0 +1,25 @@
+{
+  "targets": 16663,
+  "dialogues": 2848,
+  "missing_prefix": 0,
+  "missing_full": 0,
+  "overall_agreement": 0.8070575526615855,
+  "disagreements": 3215,
+  "p_only_scoreable": 1795,
+  "f_only_scoreable": 515,
+  "polarity_flips": 905,
+  "H1_na_boundary_share": 0.71850699844479,
+  "H1_ci": [
+    0.701036651986708,
+    0.7347576945176207
+  ],
+  "H2_net_p_minus_f_per_target": 0.07681689971793795,
+  "H2_ci": [
+    0.0696169053021887,
+    0.08409970857459667
+  ],
+  "H3_both_scoreable": 12529,
+  "H3_polarity_agreement": 0.9277675792162183,
+  "nonNA_rate_prefix": 0.8596291184060494,
+  "nonNA_rate_full": 0.7828122186881113
+}

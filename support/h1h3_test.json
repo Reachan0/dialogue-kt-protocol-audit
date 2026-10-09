@@ -1,0 +1,29 @@
+{
+  "targets": 4404,
+  "dialogues": 395,
+  "missing_prefix": 0,
+  "missing_full": 0,
+  "overall_agreement": 0.9044050862851953,
+  "disagreements": 421,
+  "p_only_scoreable": 224,
+  "f_only_scoreable": 89,
+  "polarity_flips": 108,
+  "H1_na_boundary_share": 0.7434679334916865,
+  "H1_ci": [
+    0.6975051151463932,
+    0.7887073911267459
+  ],
+  "H2_net_p_minus_f_per_target": 0.030653950953678476,
+  "H2_ci": [
+    0.021704847845386364,
+    0.0399256423213736
+  ],
+  "H3_both_scoreable": 2129,
+  "H3_polarity_agreement": 0.9492719586660404,
+  "nonNA_rate_prefix": 0.5342870118074478,
+  "nonNA_rate_full": 0.5036330608537694,
+  "cross_annotator_prefix_agreement": 0.8998637602179836,
+  "cross_annotator_prefix_n": 4404,
+  "cross_annotator_full_agreement": 0.9116712079927338,
+  "cross_annotator_full_n": 4404
+}
