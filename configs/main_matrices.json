@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "cells": {
+    "qatd2k": {
+      "dkt": {
+        "metrics": "metrics/qatd2k_dkt.json",
+        "predictions": {
+          "C-C": "predictions/qatd2k_dkt_C-C.csv",
+          "C-L": "predictions/qatd2k_dkt_C-L.csv",
+          "L-C": "predictions/qatd2k_dkt_L-C.csv",
+          "L-L": "predictions/qatd2k_dkt_L-L.csv"
+        }
+      },
+      "simplekt": {
+        "metrics": "metrics/qatd2k_simplekt.json",
+        "predictions": {
+          "C-C": "predictions/qatd2k_simplekt_C-C.csv",
+          "C-L": "predictions/qatd2k_simplekt_C-L.csv",
+          "L-C": "predictions/qatd2k_simplekt_L-C.csv",
+          "L-L": "predictions/qatd2k_simplekt_L-L.csv"
+        }
+      },
+      "dktsem": {
+        "metrics": "metrics/qatd2k_dktsem.json",
+        "predictions": {
+          "C-C": "predictions/qatd2k_dktsem_C-C.csv",
+          "C-L": "predictions/qatd2k_dktsem_C-L.csv",
+          "L-C": "predictions/qatd2k_dktsem_L-C.csv",
+          "L-L": "predictions/qatd2k_dktsem_L-L.csv"
+        }
+      },
+      "llmkt": {
+        "metrics": "metrics/qatd2k_llmkt.json",
+        "predictions": {
+          "C-C": "predictions/qatd2k_llmkt_C-C.csv",
+          "C-L": "predictions/qatd2k_llmkt_C-L.csv",
+          "L-C": "predictions/qatd2k_llmkt_L-C.csv",
+          "L-L": "predictions/qatd2k_llmkt_L-L.csv"
+        }
+      }
+    },
+    "mathdial": {
+      "dkt": {
+        "metrics": "metrics/mathdial_dkt.json",
+        "predictions": {
+          "C-C": "predictions/mathdial_dkt_C-C.csv",
+          "C-L": "predictions/mathdial_dkt_C-L.csv",
+          "L-C": "predictions/mathdial_dkt_L-C.csv",
+          "L-L": "predictions/mathdial_dkt_L-L.csv"
+        }
+      },
+      "simplekt": {
+        "metrics": "metrics/mathdial_simplekt.json",
+        "predictions": {
+          "C-C": "predictions/mathdial_simplekt_C-C.csv",
+          "C-L": "predictions/mathdial_simplekt_C-L.csv",
+          "L-C": "predictions/mathdial_simplekt_L-C.csv",
+          "L-L": "predictions/mathdial_simplekt_L-L.csv"
+        }
+      },
+      "dktsem": {
+        "metrics": "metrics/mathdial_dktsem.json",
+        "predictions": {
+          "C-C": "predictions/mathdial_dktsem_C-C.csv",
+          "C-L": "predictions/mathdial_dktsem_C-L.csv",
+          "L-C": "predictions/mathdial_dktsem_L-C.csv",
+          "L-L": "predictions/mathdial_dktsem_L-L.csv"
+        }
+      },
+      "llmkt": {
+        "metrics": "metrics/mathdial_llmkt.json",
+        "predictions": {
+          "C-C": "predictions/mathdial_llmkt_C-C.csv",
+          "C-L": "predictions/mathdial_llmkt_C-L.csv",
+          "L-C": "predictions/mathdial_llmkt_L-C.csv",
+          "L-L": "predictions/mathdial_llmkt_L-L.csv"
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "seed": 221,
+    "resamples": 2000,
+    "cluster": "dialogue_id",
+    "method": "percentile"
+  },
+  "scope": "Main Train x Eval matrices; probabilities, labels and keyed rows from archived completed runs."
+}

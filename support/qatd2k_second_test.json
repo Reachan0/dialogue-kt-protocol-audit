@@ -25,5 +25,22 @@
   "cross_annotator_prefix_agreement": 0.8998637602179836,
   "cross_annotator_prefix_n": 4404,
   "cross_annotator_full_agreement": 0.9116712079927338,
-  "cross_annotator_full_n": 4404
+  "cross_annotator_full_n": 4404,
+  "provenance": {
+    "bootstrap_seed": 20261007,
+    "resamples": 2000,
+    "cluster": "dialogue_id",
+    "method": "percentile",
+    "paired_turn_keys": [
+      "dialogue_id",
+      "turn"
+    ],
+    "combined_split_ids": "split:dialogue_id for all-corpus files",
+    "pilot_results_included": false,
+    "analysis_code": "code/analyze_protocol_pair.py",
+    "inputs_sha256": {
+      "labels/qatd2k_second_annotator/prefix_test.jsonl": "f7213445e2e5b355aa66fbac5305d70706abfc65225f4ee251252cdb4f498691",
+      "labels/qatd2k_second_annotator/full_test.jsonl": "325a092226b467dc25e94720712ea51547fc4513c8070ce789b5da19ba8ff1da"
+    }
+  }
 }

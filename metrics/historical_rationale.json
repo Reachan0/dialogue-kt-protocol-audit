@@ -1,0 +1,919 @@
+{
+  "sample_sha256": "4df62fc66ccbe2a34ecd7fe3a3ca7c774067ab283416d6d227ea1da34f74c991",
+  "manifest_sha256": "62b932dc4328f290426d066c50cdef2c00f11cd82361271af86b2620df6dea22",
+  "analysis_code_sha256": "751f72b435232ecedb62134f39d9259415bdad762fe7d4b62a2e32ff12529808",
+  "output_sha256": {
+    "original.jsonl": "5694d4fc6a18f393aa5d62aede4d1051d3a44e889ebfb36b2d60895a09d5c47f",
+    "labels-only.jsonl": "d0cabda7c45629033cfe8481a7523b1a30488a6b46df8bfebb480a181b5c6b3f",
+    "original-repeat.jsonl": "f8c3469279265710d9f262f0c18cb05812f4cab0719fdd17dcddfe7f6db297ec"
+  },
+  "primary_dialogues": 100,
+  "repeat_dialogues": 20,
+  "primary_student_turns": 1157,
+  "repeat_student_turns": 247,
+  "comparisons": {
+    "original__vs__labels-only": {
+      "n": 1157,
+      "agree": 1124,
+      "na_boundary": 26,
+      "polarity_flip": 7,
+      "left_non_na": 522,
+      "right_non_na": 538,
+      "support_after_first_scoreable_exclusion": {
+        "left": 422,
+        "right": 438,
+        "common": 417,
+        "left_only": 5,
+        "right_only": 21
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.028522039757994815,
+          "ci95": [
+            0.019265172900494003,
+            0.03880156161709559
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.02247191011235955,
+          "ci95": [
+            0.013996761579274108,
+            0.032029567217643745
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.006050129645635264,
+          "ci95": [
+            0.0025167785234899327,
+            0.010591872759695227
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 614,
+        "false->false": 218,
+        "true->true": 292,
+        "true->false": 4,
+        "na->true": 8,
+        "false->na": 3,
+        "na->false": 13,
+        "true->na": 2,
+        "false->true": 3
+      }
+    },
+    "original__vs__frozen-prefix": {
+      "n": 1157,
+      "agree": 1126,
+      "na_boundary": 22,
+      "polarity_flip": 9,
+      "left_non_na": 522,
+      "right_non_na": 526,
+      "support_after_first_scoreable_exclusion": {
+        "left": 422,
+        "right": 426,
+        "common": 413,
+        "left_only": 9,
+        "right_only": 13
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.02679343128781331,
+          "ci95": [
+            0.017497812773403325,
+            0.036426791912125965
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.01901469317199654,
+          "ci95": [
+            0.011157385820232596,
+            0.028146847934648108
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.007778738115816767,
+          "ci95": [
+            0.0034129692832764505,
+            0.012943011176583944
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 622,
+        "false->false": 215,
+        "true->true": 289,
+        "true->na": 6,
+        "false->true": 6,
+        "false->na": 3,
+        "true->false": 3,
+        "na->false": 6,
+        "na->true": 7
+      }
+    },
+    "labels-only__vs__frozen-prefix": {
+      "n": 1157,
+      "agree": 1114,
+      "na_boundary": 32,
+      "polarity_flip": 11,
+      "left_non_na": 538,
+      "right_non_na": 526,
+      "support_after_first_scoreable_exclusion": {
+        "left": 438,
+        "right": 426,
+        "common": 416,
+        "left_only": 22,
+        "right_only": 10
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.037165082108902334,
+          "ci95": [
+            0.027506273688318896,
+            0.047863359442993914
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.027657735522904063,
+          "ci95": [
+            0.01910299003322259,
+            0.037375887875232154
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.00950734658599827,
+          "ci95": [
+            0.0044014084507042256,
+            0.01563850467670198
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 609,
+        "false->false": 214,
+        "true->true": 291,
+        "true->na": 8,
+        "false->na": 14,
+        "false->true": 7,
+        "na->false": 6,
+        "true->false": 4,
+        "na->true": 4
+      }
+    },
+    "original__vs__frozen-full": {
+      "n": 1157,
+      "agree": 1116,
+      "na_boundary": 31,
+      "polarity_flip": 10,
+      "left_non_na": 522,
+      "right_non_na": 507,
+      "support_after_first_scoreable_exclusion": {
+        "left": 422,
+        "right": 407,
+        "common": 399,
+        "left_only": 23,
+        "right_only": 8
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.03543647363872083,
+          "ci95": [
+            0.025479705604020707,
+            0.045740203405727015
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.02679343128781331,
+          "ci95": [
+            0.018229112727837615,
+            0.03634792069632495
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.00864304235090752,
+          "ci95": [
+            0.003889285302829281,
+            0.013723604333520956
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 627,
+        "false->false": 207,
+        "true->true": 282,
+        "true->false": 4,
+        "true->na": 12,
+        "false->na": 11,
+        "na->false": 4,
+        "false->true": 6,
+        "na->true": 4
+      }
+    },
+    "labels-only__vs__frozen-full": {
+      "n": 1157,
+      "agree": 1108,
+      "na_boundary": 43,
+      "polarity_flip": 6,
+      "left_non_na": 538,
+      "right_non_na": 507,
+      "support_after_first_scoreable_exclusion": {
+        "left": 438,
+        "right": 407,
+        "common": 401,
+        "left_only": 37,
+        "right_only": 6
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.04235090751944685,
+          "ci95": [
+            0.03244475786124119,
+            0.053512388542570816
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.037165082108902334,
+          "ci95": [
+            0.027854426547172097,
+            0.04744860149817566
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.005185825410544511,
+          "ci95": [
+            0.0017195064135031037,
+            0.00929073687487149
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 613,
+        "false->false": 209,
+        "true->true": 286,
+        "true->na": 15,
+        "true->false": 2,
+        "false->na": 22,
+        "false->true": 4,
+        "na->false": 4,
+        "na->true": 2
+      }
+    },
+    "frozen-prefix__vs__frozen-full": {
+      "n": 1157,
+      "agree": 1109,
+      "na_boundary": 33,
+      "polarity_flip": 15,
+      "left_non_na": 526,
+      "right_non_na": 507,
+      "support_after_first_scoreable_exclusion": {
+        "left": 426,
+        "right": 407,
+        "common": 400,
+        "left_only": 26,
+        "right_only": 7
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.04148660328435609,
+          "ci95": [
+            0.030835648336491037,
+            0.05272517954767971
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.028522039757994815,
+          "ci95": [
+            0.019733180625205043,
+            0.03835384074319523
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.01296456352636128,
+          "ci95": [
+            0.007160767929971153,
+            0.019508057675996608
+          ],
+          "dialogues": 100,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 624,
+        "true->true": 281,
+        "false->false": 204,
+        "true->na": 13,
+        "true->false": 8,
+        "false->na": 13,
+        "na->true": 4,
+        "false->true": 7,
+        "na->false": 3
+      }
+    }
+  },
+  "repeat_control": {
+    "original__vs__repeat": {
+      "n": 247,
+      "agree": 240,
+      "na_boundary": 5,
+      "polarity_flip": 2,
+      "left_non_na": 113,
+      "right_non_na": 114,
+      "support_after_first_scoreable_exclusion": {
+        "left": 93,
+        "right": 94,
+        "common": 91,
+        "left_only": 2,
+        "right_only": 3
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.02834008097165992,
+          "ci95": [
+            0.013043478260869565,
+            0.04405855292033094
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.020242914979757085,
+          "ci95": [
+            0.005071189798192398,
+            0.03686720968592174
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.008097165991902834,
+          "ci95": [
+            0.0,
+            0.019170865077414587
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 131,
+        "false->false": 41,
+        "true->true": 68,
+        "true->na": 1,
+        "false->true": 2,
+        "na->false": 2,
+        "false->na": 1,
+        "na->true": 1
+      }
+    },
+    "original__vs__labels-only": {
+      "n": 247,
+      "agree": 237,
+      "na_boundary": 7,
+      "polarity_flip": 3,
+      "left_non_na": 113,
+      "right_non_na": 118,
+      "support_after_first_scoreable_exclusion": {
+        "left": 93,
+        "right": 98,
+        "common": 92,
+        "left_only": 1,
+        "right_only": 6
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.04048582995951417,
+          "ci95": [
+            0.016062650602409637,
+            0.06779661016949153
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.02834008097165992,
+          "ci95": [
+            0.007489937950695959,
+            0.05469162051687761
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.012145748987854251,
+          "ci95": [
+            0.0,
+            0.025928335398595608
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 128,
+        "false->false": 41,
+        "true->true": 68,
+        "true->false": 1,
+        "na->false": 4,
+        "na->true": 2,
+        "false->na": 1,
+        "false->true": 2
+      }
+    },
+    "labels-only__vs__repeat": {
+      "n": 247,
+      "agree": 235,
+      "na_boundary": 8,
+      "polarity_flip": 4,
+      "left_non_na": 118,
+      "right_non_na": 114,
+      "support_after_first_scoreable_exclusion": {
+        "left": 98,
+        "right": 94,
+        "common": 92,
+        "left_only": 6,
+        "right_only": 2
+      },
+      "rates": {
+        "disagreement": {
+          "point": 0.048582995951417005,
+          "ci95": [
+            0.027131782945736434,
+            0.07166215967057955
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "na_boundary": {
+          "point": 0.032388663967611336,
+          "ci95": [
+            0.014632370352829743,
+            0.05166382440716836
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        },
+        "polarity_flip": {
+          "point": 0.016194331983805668,
+          "ci95": [
+            0.004166666666666667,
+            0.030534351145038167
+          ],
+          "dialogues": 20,
+          "resamples": 2000,
+          "seed": 20260913,
+          "degenerate": false,
+          "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+        }
+      },
+      "transition_counts": {
+        "na->na": 127,
+        "false->false": 40,
+        "true->true": 68,
+        "false->na": 4,
+        "false->true": 2,
+        "true->na": 2,
+        "na->false": 1,
+        "true->false": 2,
+        "na->true": 1
+      }
+    },
+    "paired_excess_disagreement": {
+      "point": 0.012145748987854251,
+      "ci95": [
+        -0.01454946524064171,
+        0.0407244008714597
+      ],
+      "dialogues": 20,
+      "resamples": 2000,
+      "seed": 20260913,
+      "degenerate": false,
+      "method": "Percentile bootstrap of dialogue clusters, pooled target rate. A degenerate interval does not bound unobserved events or establish equivalence."
+    }
+  },
+  "first_student_turn_control": {
+    "n": 100,
+    "agree": 99,
+    "na_boundary": 1,
+    "polarity_flip": 0,
+    "left_non_na": 1,
+    "right_non_na": 2,
+    "support_after_first_scoreable_exclusion": {
+      "left": 0,
+      "right": 0,
+      "common": 0,
+      "left_only": 0,
+      "right_only": 0
+    }
+  },
+  "changed_targets": [
+    {
+      "dialogue_id": "11219",
+      "turn": 6,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "11853",
+      "turn": 14,
+      "original": "true",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "12074",
+      "turn": 1,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "12106",
+      "turn": 6,
+      "original": "false",
+      "labels-only": "na",
+      "frozen-prefix": "na",
+      "frozen-full": "false",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "12227",
+      "turn": 7,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "12420",
+      "turn": 2,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "false",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "12420",
+      "turn": 6,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "true",
+      "frozen-full": "true",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "1411",
+      "turn": 7,
+      "original": "true",
+      "labels-only": "false",
+      "frozen-prefix": "true",
+      "frozen-full": "true",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "1688",
+      "turn": 6,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "1759",
+      "turn": 3,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "2507",
+      "turn": 9,
+      "original": "true",
+      "labels-only": "false",
+      "frozen-prefix": "false",
+      "frozen-full": "false",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "3114",
+      "turn": 16,
+      "original": "true",
+      "labels-only": "false",
+      "frozen-prefix": "true",
+      "frozen-full": "false",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "3353",
+      "turn": 18,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "3686",
+      "turn": 3,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "3805",
+      "turn": 2,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "5176",
+      "turn": 6,
+      "original": "true",
+      "labels-only": "na",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "6134",
+      "turn": 7,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "6134",
+      "turn": 8,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "false",
+      "original-repeat": "false"
+    },
+    {
+      "dialogue_id": "6134",
+      "turn": 12,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "true",
+      "frozen-full": "true",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "6884",
+      "turn": 2,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "7000",
+      "turn": 5,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "7472",
+      "turn": 9,
+      "original": "false",
+      "labels-only": "na",
+      "frozen-prefix": "false",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "7472",
+      "turn": 10,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "8220",
+      "turn": 3,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "828",
+      "turn": 7,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "true",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "8937",
+      "turn": 8,
+      "original": "true",
+      "labels-only": "na",
+      "frozen-prefix": "true",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "8978",
+      "turn": 6,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "9629",
+      "turn": 2,
+      "original": "false",
+      "labels-only": "na",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "9713",
+      "turn": 7,
+      "original": "false",
+      "labels-only": "true",
+      "frozen-prefix": "true",
+      "frozen-full": "true",
+      "original-repeat": "false"
+    },
+    {
+      "dialogue_id": "9720",
+      "turn": 4,
+      "original": "na",
+      "labels-only": "false",
+      "frozen-prefix": "na",
+      "frozen-full": "na",
+      "original-repeat": "na"
+    },
+    {
+      "dialogue_id": "9720",
+      "turn": 10,
+      "original": "false",
+      "labels-only": "true",
+      "frozen-prefix": "false",
+      "frozen-full": "true",
+      "original-repeat": "false"
+    },
+    {
+      "dialogue_id": "9737",
+      "turn": 8,
+      "original": "na",
+      "labels-only": "true",
+      "frozen-prefix": "true",
+      "frozen-full": "na",
+      "original-repeat": null
+    },
+    {
+      "dialogue_id": "9863",
+      "turn": 6,
+      "original": "false",
+      "labels-only": "true",
+      "frozen-prefix": "false",
+      "frozen-full": "true",
+      "original-repeat": null
+    }
+  ],
+  "interpretation": "Historical labels remain visible. Independently generated histories, provider variability, and frozen-label service drift limit causal attribution. Repeat contrast is measured on the prespecified20-dialogue subset, not inferred for all100. Bootstrap conditions on this sampled set and is not an equivalence test. Support counts apply a rule, not a newly trained KT model. No human gold or AUC."
+}

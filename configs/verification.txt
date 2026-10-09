@@ -1,0 +1,17 @@
+PASS labels: qatd2k_primary_all, n=22468 including bootstrap intervals
+PASS labels: qatd2k_primary_test, n=4404 including bootstrap intervals
+PASS labels: mathdial_all, n=16663 including bootstrap intervals
+PASS labels: mathdial_train, n=13356 including bootstrap intervals
+PASS labels: mathdial_test, n=3307 including bootstrap intervals
+PASS labels: qatd2k_second_test, n=4404 including bootstrap intervals
+PASS support IDs: qatd2k
+PASS support IDs: mathdial
+PASS predictions: qatd2k/dkt, 4 cells, n=1607
+PASS predictions: qatd2k/simplekt, 4 cells, n=1607
+PASS predictions: qatd2k/dktsem, 4 cells, n=1607
+PASS predictions: qatd2k/llmkt, 4 cells, n=1607
+PASS predictions: mathdial/dkt, 4 cells, n=1751
+PASS predictions: mathdial/simplekt, 4 cells, n=1751
+PASS predictions: mathdial/dktsem, 4 cells, n=1751
+PASS predictions: mathdial/llmkt, 4 cells, n=1751
+All released main point estimates and keyed support checks passed.

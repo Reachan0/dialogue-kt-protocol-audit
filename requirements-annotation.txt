@@ -1,0 +1,2 @@
+-r requirements-analysis.txt
+anthropic==0.94.0

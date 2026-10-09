@@ -1,0 +1,413 @@
+{
+  "calibration_definition": "10 equal-width bins over predicted P(correct); no post-hoc calibration",
+  "calibration_scope": "agreement with each protocol's evaluation labels on the existing common prediction support; not calibration against human truth",
+  "metric_sources": {
+    "qatd2k": {
+      "dkt": "remote_archive/dialogue-kt/results/dkt_metrics_2x2.json",
+      "simplekt": "remote_archive/dialogue-kt/results/simplekt_metrics_2x2.json",
+      "dktsem": "remote_archive/dialogue-kt/results/dktsem_metrics_2x2.json",
+      "llmkt": "remote_archive/dialogue-kt/results/llmkt_seed222_causal_vs_leakage.json"
+    },
+    "mathdial": {
+      "dkt": "remote_archive/runs_mathdial/results/mathdial_dkt_metrics_2x2.json",
+      "simplekt": "remote_archive/runs_mathdial/results/mathdial_simplekt_metrics_2x2.json",
+      "dktsem": "remote_archive/runs_mathdial/results/mathdial_dktsem_metrics_2x2.json",
+      "llmkt": "remote_archive/runs_mathdial/results/mathdial_llmkt_s222_metrics_2x2.json"
+    }
+  },
+  "calibration": {
+    "qatd2k": {
+      "dkt": {
+        "C-C": {
+          "n": 1607,
+          "ece": 0.044413245505031514,
+          "ci95": [
+            0.02738777787110361,
+            0.0697187193995061
+          ]
+        },
+        "C-L": {
+          "n": 1607,
+          "ece": 0.04435208448172351,
+          "ci95": [
+            0.02655182899840301,
+            0.0696698637809056
+          ]
+        },
+        "L-C": {
+          "n": 1607,
+          "ece": 0.033390594162997375,
+          "ci95": [
+            0.01737753306416852,
+            0.05819120734392937
+          ]
+        },
+        "L-L": {
+          "n": 1607,
+          "ece": 0.033527013765185465,
+          "ci95": [
+            0.016385053068445392,
+            0.05866439625789371
+          ]
+        }
+      },
+      "simplekt": {
+        "C-C": {
+          "n": 1607,
+          "ece": 0.0422437896658785,
+          "ci95": [
+            0.026645386671448862,
+            0.070771491642047
+          ]
+        },
+        "C-L": {
+          "n": 1607,
+          "ece": 0.030986115419872076,
+          "ci95": [
+            0.021180873465403094,
+            0.060560584975511776
+          ]
+        },
+        "L-C": {
+          "n": 1607,
+          "ece": 0.04807936816981069,
+          "ci95": [
+            0.0311807163805757,
+            0.07716072174360676
+          ]
+        },
+        "L-L": {
+          "n": 1607,
+          "ece": 0.04348547219785014,
+          "ci95": [
+            0.02592604891464277,
+            0.0689094773846757
+          ]
+        }
+      },
+      "dktsem": {
+        "C-C": {
+          "n": 1607,
+          "ece": 0.02948366000775452,
+          "ci95": [
+            0.015990664610141658,
+            0.05578394142838747
+          ]
+        },
+        "C-L": {
+          "n": 1607,
+          "ece": 0.0264541721151123,
+          "ci95": [
+            0.014275754254754094,
+            0.051321585795613966
+          ]
+        },
+        "L-C": {
+          "n": 1607,
+          "ece": 0.02967728538103705,
+          "ci95": [
+            0.014387652458002297,
+            0.05822058800897492
+          ]
+        },
+        "L-L": {
+          "n": 1607,
+          "ece": 0.025610385229666157,
+          "ci95": [
+            0.012139602139202439,
+            0.05270939050859834
+          ]
+        }
+      },
+      "llmkt": {
+        "C-C": {
+          "n": 1607,
+          "ece": 0.048579515695720214,
+          "ci95": [
+            0.03520436144525352,
+            0.07655424147843419
+          ]
+        },
+        "C-L": {
+          "n": 1607,
+          "ece": 0.04782537866543742,
+          "ci95": [
+            0.03341825516520856,
+            0.07511802162719107
+          ]
+        },
+        "L-C": {
+          "n": 1607,
+          "ece": 0.060340337153911315,
+          "ci95": [
+            0.04662449380777983,
+            0.08513410300063025
+          ]
+        },
+        "L-L": {
+          "n": 1607,
+          "ece": 0.05927242584382815,
+          "ci95": [
+            0.04619492656636837,
+            0.08306451363593317
+          ]
+        }
+      }
+    },
+    "mathdial": {
+      "dkt": {
+        "C-C": {
+          "n": 1751,
+          "ece": 0.04238583509204452,
+          "ci95": [
+            0.026439911436789816,
+            0.06959201067586032
+          ]
+        },
+        "C-L": {
+          "n": 1751,
+          "ece": 0.03919296471273328,
+          "ci95": [
+            0.025322446788816348,
+            0.06862350362370213
+          ]
+        },
+        "L-C": {
+          "n": 1751,
+          "ece": 0.05506616635093815,
+          "ci95": [
+            0.032605687670428124,
+            0.08005767372312336
+          ]
+        },
+        "L-L": {
+          "n": 1751,
+          "ece": 0.046763895376282824,
+          "ci95": [
+            0.02822156645958935,
+            0.07285376343447386
+          ]
+        }
+      },
+      "simplekt": {
+        "C-C": {
+          "n": 1751,
+          "ece": 0.011996765313047757,
+          "ci95": [
+            0.00973917567810579,
+            0.04265762765230977
+          ]
+        },
+        "C-L": {
+          "n": 1751,
+          "ece": 0.011841165039077712,
+          "ci95": [
+            0.009257749203813136,
+            0.04063533699275793
+          ]
+        },
+        "L-C": {
+          "n": 1751,
+          "ece": 0.021364041136578776,
+          "ci95": [
+            0.011959725355366322,
+            0.04790315029602352
+          ]
+        },
+        "L-L": {
+          "n": 1751,
+          "ece": 0.02331692341189597,
+          "ci95": [
+            0.012490549033962246,
+            0.049538644201064616
+          ]
+        }
+      },
+      "dktsem": {
+        "C-C": {
+          "n": 1751,
+          "ece": 0.02472046546974159,
+          "ci95": [
+            0.014752558945100178,
+            0.0500809809456006
+          ]
+        },
+        "C-L": {
+          "n": 1751,
+          "ece": 0.020318807073486395,
+          "ci95": [
+            0.012939339469666739,
+            0.046054344379904084
+          ]
+        },
+        "L-C": {
+          "n": 1751,
+          "ece": 0.027115326244990388,
+          "ci95": [
+            0.0205709492826214,
+            0.05544862531133822
+          ]
+        },
+        "L-L": {
+          "n": 1751,
+          "ece": 0.03769821823834693,
+          "ci95": [
+            0.02413951129128299,
+            0.06097967619416955
+          ]
+        }
+      },
+      "llmkt": {
+        "C-C": {
+          "n": 1751,
+          "ece": 0.043653302637169794,
+          "ci95": [
+            0.030423689080559667,
+            0.06769151263851877
+          ]
+        },
+        "C-L": {
+          "n": 1751,
+          "ece": 0.053933142728546164,
+          "ci95": [
+            0.03860592727112619,
+            0.07634290528274137
+          ]
+        },
+        "L-C": {
+          "n": 1751,
+          "ece": 0.07080165774634334,
+          "ci95": [
+            0.05513315412118175,
+            0.0946892257712241
+          ]
+        },
+        "L-L": {
+          "n": 1751,
+          "ece": 0.08108149783771969,
+          "ci95": [
+            0.06440339928806468,
+            0.10431929923300222
+          ]
+        }
+      }
+    }
+  },
+  "auc_shifts": {
+    "qatd2k": {
+      "dkt": {
+        "train_change_fixed_eval_prefix_pp": -0.9903495748414093,
+        "train_change_fixed_eval_full_pp": -0.901144002068266,
+        "eval_change_fixed_train_prefix_pp": -1.353073378746572,
+        "eval_change_fixed_train_full_pp": -1.2638678059734287
+      },
+      "simplekt": {
+        "train_change_fixed_eval_prefix_pp": -0.024101960935540845,
+        "train_change_fixed_eval_full_pp": 0.20472466390900612,
+        "eval_change_fixed_train_prefix_pp": -1.1088520448778283,
+        "eval_change_fixed_train_full_pp": -0.8800254200332813
+      },
+      "dktsem": {
+        "train_change_fixed_eval_prefix_pp": -1.387710570798717,
+        "train_change_fixed_eval_full_pp": -1.5495734229575953,
+        "eval_change_fixed_train_prefix_pp": -0.8761850496352253,
+        "eval_change_fixed_train_full_pp": -1.0380479017941036
+      },
+      "llmkt": {
+        "train_change_fixed_eval_prefix_pp": -0.8434079530043936,
+        "train_change_fixed_eval_full_pp": -0.9437209152016401,
+        "eval_change_fixed_train_prefix_pp": -0.3003183545644772,
+        "eval_change_fixed_train_full_pp": -0.4006313167617237
+      }
+    },
+    "mathdial": {
+      "dkt": {
+        "train_change_fixed_eval_prefix_pp": -0.003612507947514665,
+        "train_change_fixed_eval_full_pp": 0.09134430343706867,
+        "eval_change_fixed_train_prefix_pp": 0.9436925544739627,
+        "eval_change_fixed_train_full_pp": 1.038649365858546
+      },
+      "simplekt": {
+        "train_change_fixed_eval_prefix_pp": 0.5178365937859586,
+        "train_change_fixed_eval_full_pp": 0.5298760459120366,
+        "eval_change_fixed_train_prefix_pp": -0.01366778523044232,
+        "eval_change_fixed_train_full_pp": -0.0016283331043642768
+      },
+      "dktsem": {
+        "train_change_fixed_eval_prefix_pp": 0.46043055840176983,
+        "train_change_fixed_eval_full_pp": 0.3015811923001932,
+        "eval_change_fixed_train_prefix_pp": 0.40809290212342475,
+        "eval_change_fixed_train_full_pp": 0.24924353602184812
+      },
+      "llmkt": {
+        "train_change_fixed_eval_prefix_pp": -0.25537147090816115,
+        "train_change_fixed_eval_full_pp": -0.39918646891656806,
+        "eval_change_fixed_train_prefix_pp": 0.6328998567564748,
+        "eval_change_fixed_train_full_pp": 0.48908485874806784
+      }
+    }
+  },
+  "mathdial_final_turn_sensitivity": {
+    "scope": "MathDial test, existing generated labels and KC annotations; rule-count sensitivity only, no retraining or no-override AUC",
+    "causal": {
+      "input_dialogues": 595,
+      "kc_error_dialogues": 7,
+      "polarity_rewrites": 36,
+      "changed_to_na": 33,
+      "prediction_targets_removed_by_override": 31
+    },
+    "leakage": {
+      "input_dialogues": 595,
+      "kc_error_dialogues": 7,
+      "polarity_rewrites": 37,
+      "changed_to_na": 26,
+      "prediction_targets_removed_by_override": 25
+    },
+    "with_override": {
+      "annotation_support": {
+        "prefix": 2553,
+        "full": 2429,
+        "common": 2318
+      },
+      "prediction_support": {
+        "prefix": 1975,
+        "full": 1850,
+        "common": 1751
+      },
+      "exclusive_targets": 323,
+      "prefix_only_targets": {
+        "total": 224,
+        "not_scoreable_under_full": 187,
+        "jointly_scoreable_rule_excluded": 37
+      },
+      "full_only_targets": {
+        "total": 99,
+        "not_scoreable_under_prefix": 73,
+        "jointly_scoreable_rule_excluded": 26
+      }
+    },
+    "without_override": {
+      "annotation_support": {
+        "prefix": 2586,
+        "full": 2455,
+        "common": 2338
+      },
+      "prediction_support": {
+        "prefix": 2006,
+        "full": 1875,
+        "common": 1770
+      },
+      "exclusive_targets": 341,
+      "prefix_only_targets": {
+        "total": 236,
+        "not_scoreable_under_full": 199,
+        "jointly_scoreable_rule_excluded": 37
+      },
+      "full_only_targets": {
+        "total": 105,
+        "not_scoreable_under_prefix": 79,
+        "jointly_scoreable_rule_excluded": 26
+      }
+    }
+  }
+}

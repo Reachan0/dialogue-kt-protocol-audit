@@ -1,0 +1,42 @@
+{
+  "targets": 3307,
+  "dialogues": 595,
+  "missing_prefix": 0,
+  "missing_full": 0,
+  "overall_agreement": 0.8255216208043544,
+  "disagreements": 577,
+  "p_only_scoreable": 262,
+  "f_only_scoreable": 130,
+  "polarity_flips": 185,
+  "H1_na_boundary_share": 0.6793760831889082,
+  "H1_ci": [
+    0.6341880341880342,
+    0.7200752595738943
+  ],
+  "H2_net_p_minus_f_per_target": 0.03991533111581494,
+  "H2_ci": [
+    0.02481020316088811,
+    0.05507110030013155
+  ],
+  "H3_both_scoreable": 2453,
+  "H3_polarity_agreement": 0.924582144313086,
+  "nonNA_rate_prefix": 0.8209857877230118,
+  "nonNA_rate_full": 0.7810704566071969,
+  "provenance": {
+    "bootstrap_seed": 20261007,
+    "resamples": 2000,
+    "cluster": "dialogue_id",
+    "method": "percentile",
+    "paired_turn_keys": [
+      "dialogue_id",
+      "turn"
+    ],
+    "combined_split_ids": "split:dialogue_id for all-corpus files",
+    "pilot_results_included": false,
+    "analysis_code": "code/analyze_protocol_pair.py",
+    "inputs_sha256": {
+      "labels/mathdial/prefix_test.jsonl": "2207852c3ca9b3c96c2fb64348a7a70e3d617f34333b02db2636e5a2ba8d018b",
+      "labels/mathdial/full_test.jsonl": "c5b2a09198197f4577ba3ebc4b6ccbb2977a2dcbd4a0d035baf414ceb26b8244"
+    }
+  }
+}

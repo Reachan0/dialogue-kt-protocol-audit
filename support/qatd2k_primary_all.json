@@ -1,0 +1,44 @@
+{
+  "targets": 22468,
+  "dialogues": 1971,
+  "missing_prefix": 0,
+  "missing_full": 0,
+  "overall_agreement": 0.9545575930211857,
+  "disagreements": 1021,
+  "p_only_scoreable": 624,
+  "f_only_scoreable": 127,
+  "polarity_flips": 270,
+  "H1_na_boundary_share": 0.7355533790401567,
+  "H1_ci": [
+    0.7057505861021607,
+    0.7647128784910728
+  ],
+  "H2_net_p_minus_f_per_target": 0.022120348940715684,
+  "H2_ci": [
+    0.019508150302486198,
+    0.024788358891977193
+  ],
+  "H3_both_scoreable": 10265,
+  "H3_polarity_agreement": 0.9736970287384316,
+  "nonNA_rate_prefix": 0.4846448282001068,
+  "nonNA_rate_full": 0.4625244792593911,
+  "provenance": {
+    "bootstrap_seed": 20261007,
+    "resamples": 2000,
+    "cluster": "dialogue_id",
+    "method": "percentile",
+    "paired_turn_keys": [
+      "dialogue_id",
+      "turn"
+    ],
+    "combined_split_ids": "split:dialogue_id for all-corpus files",
+    "pilot_results_included": false,
+    "analysis_code": "code/analyze_protocol_pair.py",
+    "inputs_sha256": {
+      "labels/qatd2k_primary/prefix_train.jsonl": "dcaf38a36830745562f5fc00ab3e80b76299d686434ea55cd3cac2f329c50433",
+      "labels/qatd2k_primary/prefix_test.jsonl": "d6e673971f69a0ffb0dc35aefe0b2b6ac7b3ac6c212337570a668350b220e741",
+      "labels/qatd2k_primary/full_train.jsonl": "f580d7f1394eb75401084dda06f9d38091c371e0f743948c5cb0ca3a274df13d",
+      "labels/qatd2k_primary/full_test.jsonl": "df7d8ca9ea55ca53562f4c2553f9593d1bf200657defc1117b12ed725f1c43cd"
+    }
+  }
+}
