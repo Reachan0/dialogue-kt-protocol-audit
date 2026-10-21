@@ -1,7 +1,7 @@
 {
   "verify_release.py": "ab7e1810de16521e6547bfca45a8bce5f384187e59c8e160cf312c6dfa0b3749",
   "prepare_label_layout.py": "ec8c63861c1e7e4b5f5608f5a62febccbcc469420684becff72ed5c2e9e76931",
-  "README.md": "078ab09df02c100469647290797224821a1f006a0f95541f216a562d32ba598b",
+  "README.md": "bd980a1326dcb428c4621ca62181272794ffb3ed5355853c38f3454518f78a8e",
   ".gitignore": "60c9bdd905fcf45ac485c680d32e9773962cf061b6f041dcddd033911558a672",
   "requirements-annotation.txt": "499efefdc6621b2437e3ec24c06a70a8db6a851d287bf8c3b5fee728e517e28d",
   "requirements-analysis.txt": "b1497ca101bd0cf5221619b4c217b2fe9f1be7a3844197cd7fb1b391c9d4ff55",

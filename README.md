@@ -1,4 +1,9 @@
-# Dialogue KT Protocol Audit — anonymous supplementary material
+# Dialogue KT Protocol Audit
+
+Code, labels and verification material for the paper *Designing the Information
+Boundary of LLM Annotators: Effects on Evaluation in Dialogue Knowledge Tracing*
+by Xuanchong Chen, Haonan Zhu and Chuantao Yin (Beihang University), submitted
+to CSCWD 2027 and currently under review.
 
 Paired Prefix/Full annotation labels, explicit evaluation supports, completed-run
 predictions and offline verification for two tutoring corpora. No credentials,
@@ -141,6 +146,10 @@ attribution and share-alike conditions:
 <https://github.com/eth-nlped/mathdial>.
 
 The included upstream dialogue-kt source is covered by its own MIT licence in
-`dialogue-kt/LICENSE`. Source-provider attribution is not author identification
-for this submission. No author-identifying service addresses or host paths are
-included in this release.
+`dialogue-kt/LICENSE`. No service addresses or host paths are included in this
+release.
+
+## Contact
+
+Xuanchong Chen (wpure@buaa.edu.cn) and Chuantao Yin (chuantao.yin@buaa.edu.cn),
+Beihang University.
