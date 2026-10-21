@@ -137,8 +137,10 @@ are not claimed to be fully regenerable from this release.
 
 ## Licences and data provenance
 
-QATD2k-derived labels, text and processed inputs: **CC BY-NC 4.0** (research,
-non-commercial reuse with attribution):
+QATD2k-derived labels, text and processed inputs: **CC BY-NC-SA 4.0**
+(attribution, non-commercial, share-alike). The dataset metadata lists CC BY-NC
+4.0 while the dataset card text states CC BY-NC-SA 4.0; we release derived files
+under the stricter terms, which satisfy both readings:
 <https://huggingface.co/datasets/Eedi/Question-Anchored-Tutoring-Dialogues-2k>.
 
 MathDial-derived labels, text and processed inputs: **CC BY-SA 4.0**, retaining
