@@ -1,7 +1,7 @@
 # Dialogue KT Protocol Audit
 
-Code, labels and verification material for the paper *Designing the Information
-Boundary of LLM Annotators: Effects on Evaluation in Dialogue Knowledge Tracing*
+Code, labels and verification material for the paper *Designing LLM Annotation
+Protocols for Dialogue Knowledge Tracing: Prefix vs. Full-Dialogue Labels*
 by Xuanchong Chen, Haonan Zhu and Chuantao Yin (Beihang University), submitted
 to CSCWD 2027 and currently under review.
 
