@@ -69,6 +69,11 @@ the **training** protocol, the second the **evaluation** protocol.
   history-label, seed-221 and rationale results for supplementary experiments.
 - `predictions/`: 32 main-cell CSVs, one per corpus/model/train/eval combination.
   Only key, label, probability and protocol columns are included.
+- `metrics/seeds/` and `predictions/seeds/`: the DKT, simpleKT and DKT-Sem 2x2
+  matrices retrained at seeds 222 and 223 on both corpora (same settings as the
+  main seed-221 runs; recipe in `configs/run_baseline_seeds.sh`).
+  `python code/summarize_seeds.py` recomputes the three-seed summary
+  (`metrics/seeds/seed_summary.json`) from the archived metrics.
 - `code/`: annotation drivers and offline analyses. `review_followup.py` exports the archived ECE summaries and the MathDial final-turn rule-count sensitivity. The main analyses are
   runnable with the processed inputs supplied here. The original raw-data
   preprocessor is also supplied for reference; its source-specific metadata must
