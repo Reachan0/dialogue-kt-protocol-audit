@@ -114,5 +114,79 @@
       "n_common": 1751,
       "dialogues": 530
     }
+  },
+  "baseline_seeds": {
+    "qatd2k_dkt_s221": {
+      "delta_F_minus_P": 2.3,
+      "common_delta_F_minus_P": 2.25
+    },
+    "qatd2k_dkt_s222": {
+      "delta_F_minus_P": 2.09,
+      "common_delta_F_minus_P": 2.22
+    },
+    "qatd2k_dkt_s223": {
+      "delta_F_minus_P": 1.18,
+      "common_delta_F_minus_P": 1.29
+    },
+    "qatd2k_simplekt_s221": {
+      "delta_F_minus_P": 0.88,
+      "common_delta_F_minus_P": 0.9
+    },
+    "qatd2k_simplekt_s222": {
+      "delta_F_minus_P": 2.75,
+      "common_delta_F_minus_P": 2.78
+    },
+    "qatd2k_simplekt_s223": {
+      "delta_F_minus_P": 2.33,
+      "common_delta_F_minus_P": 1.97
+    },
+    "qatd2k_dktsem_s221": {
+      "delta_F_minus_P": 2.59,
+      "common_delta_F_minus_P": 2.43
+    },
+    "qatd2k_dktsem_s222": {
+      "delta_F_minus_P": 1.47,
+      "common_delta_F_minus_P": 0.88
+    },
+    "qatd2k_dktsem_s223": {
+      "delta_F_minus_P": 2.12,
+      "common_delta_F_minus_P": 1.72
+    },
+    "mathdial_dkt_s221": {
+      "delta_F_minus_P": -0.91,
+      "common_delta_F_minus_P": -1.04
+    },
+    "mathdial_dkt_s222": {
+      "delta_F_minus_P": -0.06,
+      "common_delta_F_minus_P": 0.05
+    },
+    "mathdial_dkt_s223": {
+      "delta_F_minus_P": 0.96,
+      "common_delta_F_minus_P": 0.32
+    },
+    "mathdial_simplekt_s221": {
+      "delta_F_minus_P": 0.01,
+      "common_delta_F_minus_P": -0.52
+    },
+    "mathdial_simplekt_s222": {
+      "delta_F_minus_P": 0.57,
+      "common_delta_F_minus_P": 0.02
+    },
+    "mathdial_simplekt_s223": {
+      "delta_F_minus_P": -0.2,
+      "common_delta_F_minus_P": -0.61
+    },
+    "mathdial_dktsem_s221": {
+      "delta_F_minus_P": -0.93,
+      "common_delta_F_minus_P": -0.71
+    },
+    "mathdial_dktsem_s222": {
+      "delta_F_minus_P": 0.65,
+      "common_delta_F_minus_P": 0.77
+    },
+    "mathdial_dktsem_s223": {
+      "delta_F_minus_P": -0.84,
+      "common_delta_F_minus_P": -0.7
+    }
   }
 }

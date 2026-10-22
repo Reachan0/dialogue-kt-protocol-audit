@@ -2,7 +2,8 @@
 
 Each bootstrap resample draws dialogue IDs from the union of both cells' dialogues;
 each pipeline is scored on its own targets within the resampled dialogues, and the
-F-P AUC difference is recorded. Also reports the same diagonal gap on common support.
+F-P AUC difference is recorded. Also reports the same diagonal gap on common support,
+and point estimates of both gaps for the baselines at seeds 221-223.
 Standard library only.  Usage: python code/end_to_end_bootstrap.py [n_boot]
 """
 import csv, json, random, sys
@@ -62,4 +63,16 @@ for corp in ['qatd2k', 'mathdial']:
             'n_P': len(flat(P)), 'n_F': len(flat(F)), 'n_common': len(common), 'dialogues': len(dids),
         }
         print(corp, m, out[f'{corp}_{m}'], flush=True)
-json.dump({'n_boot': n_boot, 'seed': 20261022, 'results': out}, open('metrics/end_to_end.json', 'w'), indent=2)
+seeds = {}
+for corp in ['qatd2k', 'mathdial']:
+    for m in ['dkt', 'simplekt', 'dktsem']:
+        for seed in [221, 222, 223]:
+            pre = f'{R}/{corp}_{m}' if seed == 221 else f'{R}/seeds/{corp}_{m}_s{seed}'
+            P, F = load(pre + '_C-C.csv'), load(pre + '_L-L.csv')
+            common = {(d, t) for d in P for t in P[d]} & {(d, t) for d in F for t in F[d]}
+            seeds[f'{corp}_{m}_s{seed}'] = {
+                'delta_F_minus_P': round((auc(flat(F)) - auc(flat(P))) * 100, 2),
+                'common_delta_F_minus_P': round((auc(flat(F, common)) - auc(flat(P, common))) * 100, 2),
+            }
+            print(corp, m, seed, seeds[f'{corp}_{m}_s{seed}'], flush=True)
+json.dump({'n_boot': n_boot, 'seed': 20261022, 'results': out, 'baseline_seeds': seeds}, open('metrics/end_to_end.json', 'w'), indent=2)

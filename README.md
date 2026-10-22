@@ -76,7 +76,7 @@ the **training** protocol, the second the **evaluation** protocol.
   (`metrics/seeds/seed_summary.json`) from the archived metrics.
 - `metrics/end_to_end.json`: end-to-end comparison (Train/Eval Prefix vs.
   Train/Eval Full, each on its own prediction support) with paired
-  dialogue-bootstrap intervals; recomputed by `python code/end_to_end_bootstrap.py`
+  dialogue-bootstrap intervals, plus baseline gaps at seeds 221-223; recomputed by `python code/end_to_end_bootstrap.py`
   (standard library only).
 - `code/`: annotation drivers and offline analyses. `review_followup.py` exports the archived ECE summaries and the MathDial final-turn rule-count sensitivity. The main analyses are
   runnable with the processed inputs supplied here. The original raw-data
