@@ -1,0 +1,118 @@
+{
+  "n_boot": 2000,
+  "seed": 20261022,
+  "results": {
+    "qatd2k_dkt": {
+      "own_auc_P": 53.17,
+      "own_auc_F": 55.46,
+      "delta_F_minus_P": 2.3,
+      "ci95": [
+        0.43,
+        4.09
+      ],
+      "common_delta_F_minus_P": 2.25,
+      "n_P": 1717,
+      "n_F": 1628,
+      "n_common": 1607,
+      "dialogues": 376
+    },
+    "qatd2k_simplekt": {
+      "own_auc_P": 53.38,
+      "own_auc_F": 54.26,
+      "delta_F_minus_P": 0.88,
+      "ci95": [
+        -1.41,
+        3.16
+      ],
+      "common_delta_F_minus_P": 0.9,
+      "n_P": 1717,
+      "n_F": 1628,
+      "n_common": 1607,
+      "dialogues": 376
+    },
+    "qatd2k_dktsem": {
+      "own_auc_P": 54.19,
+      "own_auc_F": 56.79,
+      "delta_F_minus_P": 2.59,
+      "ci95": [
+        0.55,
+        4.57
+      ],
+      "common_delta_F_minus_P": 2.43,
+      "n_P": 1717,
+      "n_F": 1628,
+      "n_common": 1607,
+      "dialogues": 376
+    },
+    "qatd2k_llmkt": {
+      "own_auc_P": 65.3,
+      "own_auc_F": 66.53,
+      "delta_F_minus_P": 1.23,
+      "ci95": [
+        -1.19,
+        3.63
+      ],
+      "common_delta_F_minus_P": 1.24,
+      "n_P": 1717,
+      "n_F": 1628,
+      "n_common": 1607,
+      "dialogues": 376
+    },
+    "mathdial_dkt": {
+      "own_auc_P": 60.92,
+      "own_auc_F": 60.02,
+      "delta_F_minus_P": -0.91,
+      "ci95": [
+        -3.29,
+        1.42
+      ],
+      "common_delta_F_minus_P": -1.04,
+      "n_P": 1975,
+      "n_F": 1850,
+      "n_common": 1751,
+      "dialogues": 530
+    },
+    "mathdial_simplekt": {
+      "own_auc_P": 59.84,
+      "own_auc_F": 59.85,
+      "delta_F_minus_P": 0.01,
+      "ci95": [
+        -2.07,
+        2.01
+      ],
+      "common_delta_F_minus_P": -0.52,
+      "n_P": 1975,
+      "n_F": 1850,
+      "n_common": 1751,
+      "dialogues": 530
+    },
+    "mathdial_dktsem": {
+      "own_auc_P": 62.03,
+      "own_auc_F": 61.11,
+      "delta_F_minus_P": -0.93,
+      "ci95": [
+        -3.03,
+        1.2
+      ],
+      "common_delta_F_minus_P": -0.71,
+      "n_P": 1975,
+      "n_F": 1850,
+      "n_common": 1751,
+      "dialogues": 530
+    },
+    "mathdial_llmkt": {
+      "own_auc_P": 78.13,
+      "own_auc_F": 77.92,
+      "delta_F_minus_P": -0.21,
+      "ci95": [
+        -2.25,
+        1.78
+      ],
+      "common_delta_F_minus_P": -0.23,
+      "n_P": 1975,
+      "n_F": 1850,
+      "n_common": 1751,
+      "dialogues": 530
+    }
+  }
+}
